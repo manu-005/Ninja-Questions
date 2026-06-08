@@ -22,9 +22,6 @@ public class Anagram {
 
             for (int i = 0; i < s1Len; i++) {
                 count[s1.charAt(i) - 'a']++;
-            }
-
-            for (int i = 0; i < s2Len; i++) {
                 count[s2.charAt(i) - 'a']--;
             }
 
