@@ -17,10 +17,9 @@ public class GroupAnagrams {
 
         Map<String, List> map = new HashMap<>();
 
-
-
         for (String s : str) {
             int[] count = new int[26];
+
             for (char c : s.toCharArray()) {
                 count[c - 'a']++;
             }
