@@ -7,7 +7,7 @@ public class TwoSum {
     public static void main(String[] args) {
 
         int[] arr = {5, 8, 9, 7, 6, 5};
-        int target = 119;
+        int target = 9;
         System.out.println(Arrays.toString(twoSum(arr, target)));
     }
 
@@ -17,6 +17,7 @@ public class TwoSum {
 
         for (int i = 0; i < arr.length; i++) {
             int reqNum = target - arr[i];
+
             if (hashMap.containsKey(reqNum)) {
 
                 int[] result = {hashMap.get(reqNum), i};
