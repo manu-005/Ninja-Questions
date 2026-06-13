@@ -30,15 +30,11 @@ public class GroupAnagrams {
                 sb.append("#");
                 sb.append(i);
             }
-
             String key = sb.toString();
-            System.out.println("key::" + key);
 
             if (!map.containsKey(key)) {
-
                 map.put(key, new ArrayList<String>());
             }
-
             map.get(key).add(s);
         }
         return new ArrayList(map.values());
