@@ -1,6 +1,8 @@
 package com.dsa.problems;
 
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class MergeList{
 
@@ -24,5 +26,9 @@ public class MergeList{
         merged.addAll(list1);
 
         System.out.println(merged);
+
+        List<Integer> res = Stream.concat(list1.stream(),list2.stream()).distinct().sorted().collect(Collectors.toList());
+
+        System.out.println(res);
     }
 }
