@@ -15,7 +15,5 @@ public class MostCommonWordInString {
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
                 .entrySet().stream().max(Map.Entry.comparingByValue()).get();
         System.out.println(v);
-
     }
-
 }
