@@ -11,7 +11,7 @@ public class MostCommonWordInString {
 
         String str = "mmmmmndhkdndbbbbbb";
 
-      Map.Entry<Character,Long> v =  str.chars().mapToObj(c-> (char) c)
+        Map.Entry<Character, Long> v = str.chars().mapToObj(c -> (char) c)
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
                 .entrySet().stream().max(Map.Entry.comparingByValue()).get();
         System.out.println(v);
